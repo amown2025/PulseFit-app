@@ -1,0 +1,123 @@
+.app-shell {
+  min-height: 100vh;
+  color: var(--color-text);
+}
+
+.content {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2.25rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0.5rem;
+  margin-bottom: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(18px) saturate(150%);
+  box-shadow: var(--shadow-card);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: radial-gradient(circle, var(--color-primary) 0%, var(--color-accent) 70%);
+  color: var(--color-ink);
+  font-weight: 800;
+  box-shadow: var(--shadow-soft);
+}
+
+.brand-name {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.brand-sub {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  font-size: 0.9rem;
+}
+
+.pill.subtle {
+  background: var(--color-surface);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 0.9rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--color-text);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.ghost:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.glass-surface {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.04));
+  border: 1px solid var(--color-border);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.32), 0 1px 0 rgba(255, 255, 255, 0.12) inset;
+  backdrop-filter: blur(24px) saturate(180%);
+}
+
+.card,
+.tile,
+.pill,
+.chip,
+.ghost,
+.input,
+.shortcut {
+  background: linear-gradient(135deg, var(--color-surface-strong), var(--color-surface));
+  border: 1px solid var(--color-border-strong);
+  backdrop-filter: blur(22px) saturate(175%);
+  box-shadow: var(--shadow-strong);
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 1.1rem 1rem 2rem;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .actions {
+    width: 100%;
+  }
+}

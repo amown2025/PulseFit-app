@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --color-bg: #0a0d12;
+  --color-surface: rgba(255, 255, 255, 0.04);
+  --color-surface-strong: rgba(255, 255, 255, 0.09);
+  --color-border: rgba(255, 255, 255, 0.12);
+  --color-border-strong: rgba(255, 255, 255, 0.22);
+  --color-primary: #4ade80;
+  --color-accent: #67e8f9;
+  --color-text: #e5f6ff;
+  --color-muted: #9ca6b8;
+  --color-ink: #0b121a;
+
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --radius-sm: 10px;
+
+  --shadow-strong: 0 20px 60px rgba(0, 0, 0, 0.34),
+    0 1px 0 rgba(255, 255, 255, 0.12) inset;
+  --shadow-card: 0 12px 40px rgba(0, 0, 0, 0.28);
+  --shadow-soft: 0 10px 24px rgba(74, 222, 128, 0.28);
+
+  --font-hero: clamp(1.9rem, 4vw, 2.5rem);
+  --font-hero-sm: clamp(1.6rem, 6vw, 2.1rem);
+  --font-title: 1.4rem;
+  --font-body: 1rem;
+
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 18% 14%, rgba(103, 232, 249, 0.18) 0, transparent 30%),
+    radial-gradient(circle at 82% 10%, rgba(74, 222, 128, 0.14) 0, transparent 32%),
+    linear-gradient(135deg, var(--color-bg) 0%, #0c1018 55%, #0a0c12 100%);
+  color: var(--color-text);
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
